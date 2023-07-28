@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Portfolio</title>
+  <!-- Add Bootstrap CSS link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Custom styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f8f9fa;
+    }
+    .navbar {
+      background-color: #343a40;
+    }
+    .hero {
+      background-color: #007bff;
+      color: #fff;
+      padding: 3rem 0;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    .hero p {
+      font-size: 1.5rem;
+    }
+    #portfolio .card {
+      border: none;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+    #portfolio .card:hover {
+      transform: translateY(-5px);
+    }
+    #contact .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+    #contact .btn-primary:hover {
+      background-color: #0056b3;
+      border-color: #0056b3;
+    }
+    .animate-fadeIn {
+      animation: fadeIn 1s;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <!-- ... (same as before) ... -->
+
+  <!-- Hero Section -->
+  <header class="hero d-flex align-items-center justify-content-center text-center">
+    <div class="container">
+      <h1 class="animate-fadeIn">Welcome to Your Portfolio</h1>
+      <p class="lead animate-fadeIn">Showcasing your talents and projects</p>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <!-- ... (same as before) ... -->
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center animate-fadeIn">Portfolio</h2>
+      <!-- Add your portfolio projects here -->
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card animate-fadeIn">
+            <img src="path/to/project1.jpg" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Project 1</h5>
+              <p class="card-text">Brief description of Project 1</p>
+            </div>
+          </div>
+        </div>
+        <!-- Add more portfolio project cards here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center animate-fadeIn">Contact</h2>
+      <p class="text-center animate-fadeIn">Feel free to get in touch with me:</p>
+      <div class="row justify-content-center">
+        <div class="col-md-6 animate-fadeIn">
+          <!-- Add a contact form here (use PHP or any other server-side language to handle form submissions) -->
+          <!-- ... (same as before) ... -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Add Bootstrap JS link and other scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
